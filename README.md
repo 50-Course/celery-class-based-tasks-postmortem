@@ -26,6 +26,12 @@ To run the test case, execute the following command:
 $ python test.py
 ```
 
+or with Docker, no installations required other than docker on your machine:
+
+```sh
+$ docker compose up
+```
+
 Bug tracker
 
 Please report error regarding this issue to official `celery` repository. Or continue the discussion at: celery/celery#8972
