@@ -1,6 +1,6 @@
 Post-mortem: Leaking state between class based tasks
 
-Ticket No: #8972
+Ticket No: `#8972`
 
 This repository aims to perform post-mortem of the production bug in @celery organization.
 
@@ -14,13 +14,17 @@ Installation
 
 To install the dependencies, run as follows in a virtual environment:
 
+```sh
 $ pip install -r requirements.txt
+```
 
 Usage
 
 To run the test case, execute the following command:
 
+```sh
 $ python test.py
+```
 
 Bug tracker
 
