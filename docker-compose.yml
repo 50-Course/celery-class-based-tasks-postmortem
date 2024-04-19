@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+    command: python test.py
+    
+  redis:
+    image: redis:6.2-alpine
+    ports:
+      - '6379:6379'
+
