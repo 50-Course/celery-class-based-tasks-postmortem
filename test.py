@@ -12,6 +12,9 @@ class MyTask(celery.Task):
         print(self.my_list)
         assert len(self.my_list) == 1
 
+# TODO: Test for leakage behavior in function-based tasks
+# to verify behavior only occurs in C.B.T
+
 my_task = app.register_task(MyTask)
 my_task.delay()
 my_task.delay()
