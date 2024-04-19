@@ -15,3 +15,4 @@ class MyTask(celery.Task):
 my_task = app.register_task(MyTask)
 my_task.delay()
 my_task.delay()
+assert len(my_task.run()) == 1, "Error it appears there are leaks"

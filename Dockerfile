@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN python install -U requirements.txt
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
